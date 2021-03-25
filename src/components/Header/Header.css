@@ -1,0 +1,156 @@
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    z-index: 9999;
+}
+
+.nav-bar-main{
+    max-width: 1250px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-bar__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar__logo a img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-bar__logo--point{
+    width: 4px;
+    height: 4px;
+    background: rgb(102, 102, 102);
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.nav-bar__logo--tele{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-bar__logo--tele a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav-bar__logo--tele a:hover{
+    border-bottom: 1px solid #000;
+}
+
+.nav-bar__menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar__menu--element{
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.nav-bar__menu--element a{
+    color: rgb(85, 84, 84);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar__menu--element a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.nav-bar-auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-auth{
+    background: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding-left: 15px;
+}
+
+.button-auth a{
+    color: rgb(31, 31, 31);
+    cursor: pointer;
+}
+
+.button-auth a.inscrire{
+    color: #11abec;
+    border: 1px solid #11abec;
+    padding: 14px 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.button-auth a.inscrire:hover{
+    color: #fff;
+    background: #11abec;
+    border: 1px solid #11abec;
+}
+
+
+
+.nav-bar__hamberger{
+    display: none;
+    font-size: 25px;
+}
+
+.nav-bar__tele{
+    display: none;
+}
+
+.nav-bar__tele a{
+    color: #000;
+    background: rgba(1,58,81,.08);
+    padding: 13px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1240px) {
+    .nav-bar__hamberger{
+        display: block;
+    }
+    .nav-bar__menu{
+        display: none;
+    }
+    .nav-bar__logo--tele{
+        display: none;
+    }
+    .nav-bar__logo--point{
+        display: none;
+    }
+    .nav-bar__tele{
+        display: block;
+    }
+}

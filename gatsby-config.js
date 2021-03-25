@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Expert Comptable en ligne pas cher, simple et efficace - Dougs ✅`,
+    description: `Expert comptable pas cher : Dougs est le seul expert comptable en ligne 100% sans paperasse. Votre comptabilité en ligne moins chère, à partir de 49€/mois.`,
     author: `@gatsbyjs`,
   },
   plugins: [
