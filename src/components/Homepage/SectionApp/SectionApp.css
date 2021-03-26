@@ -1,0 +1,161 @@
+.sec-app{
+    position: relative;
+    background: #fff;
+    width: 100%;
+
+    padding: 70px 20px;
+}
+
+.sec-app-content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.sec-app__img{
+    position: relative;
+    width: 500px;
+}
+
+.sec-app__img--1{
+    width: 240px;
+}
+.sec-app__img--2{
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    width: 280px;
+}
+ 
+.sec-app__text{
+    width: 430px;
+}
+
+.sec-app__text span{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #11abec;
+    text-align: center;
+}
+
+.sec-app__text h2{
+    color: #013a51;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.sec-app__text p{
+    color: #58676d;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.sec-app--dowload{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.sa-dowload__link{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 160px;
+
+    background: #013a51;
+    padding: 10px 0;
+    border-radius: 50px;
+
+    border: 1px solid #013a51;
+    transition: all 0.5s ease;
+    margin-right: 20px;
+}
+
+.sa-dowload__link:hover{
+    background: #fff;
+}
+
+.sa-dowload__img{
+    margin: 0;
+    margin-right: 15px;
+}
+
+.sa-dowload__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sa-dowload__text span{
+    color: #fff;
+    font-size: 8px;
+    margin: 0;
+}
+
+.sa-dowload__text p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sa-dowload__link:hover .sa-dowload__text span{
+    color: #000;
+}
+
+.sa-dowload__link:hover .sa-dowload__text p{
+    color: #000;
+}
+
+.sa-dowload__link:hover .sa-dowload__img{
+    filter: invert(80%);
+}
+
+@media only screen and (max-width: 900px) {
+
+    .sec-app__img{
+        position: relative;
+        width: 330px;
+    }
+
+    .sec-app__img--1{
+        width: 180px;
+    }
+    .sec-app__img--2{
+        position: absolute;
+        top: -30px;
+        left: 110px;
+        width: 200px;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .sec-app-content{
+        flex-direction: column;
+    }   
+}
+
+@media only screen and (max-width: 500px) {
+
+    .sec-app__text{
+        width: 330px;
+    }
+    
+}

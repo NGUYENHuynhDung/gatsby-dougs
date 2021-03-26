@@ -1,0 +1,131 @@
+.webrate{
+    position: relative;
+    background: #c0e0ed;
+    width: 100%;
+
+    padding: 70px 20px;
+}
+
+.webrate-content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.webrate__left{
+    width: calc(100% - 560px);
+    min-width: 320px;
+}
+
+.webrate__left h2{
+    color: #013a51;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.webrate__left p{
+    color: #013a51;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.webrate__left a{
+    background: #11abec;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #11abec;
+
+    transition: all 0.3s ease;
+}
+
+.webrate__left a:hover{
+    background: #fff;
+    color: #11abec;
+}
+
+.webrate__right{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.webrate__right-box{
+    background: #fff;
+    width: 260px;
+    height: 260px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wr-box__logo{
+    width: 110px;
+    margin-bottom: 0;
+}
+
+.wr-box__note{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #013a51;
+    margin-bottom: 5px;
+}
+
+.wr-box__rate{
+    margin-bottom: 15px;
+}
+
+.webrate__right-box p{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+} 
+
+.wr-box__plus{
+    font-size: 15px;
+    font-weight: 600;
+    color: #013a51;
+}
+
+.wr-box__plus:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    .webrate-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .webrate__left{
+        width: 80%;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .webrate__right{
+        flex-direction: column;
+    }
+
+    .webrate__right-box{
+        margin-bottom: 20px;
+    }
+    
+}

@@ -4,8 +4,13 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: transparent;
     z-index: 9999;
+}
+
+.nav-bar.scroll{
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
 }
 
 .nav-bar-main{
@@ -103,8 +108,8 @@
 .button-auth a.inscrire{
     color: #11abec;
     border: 1px solid #11abec;
-    padding: 12px 20px;
-    border-radius: 20px;
+    padding: 12px 25px;
+    border-radius: 50px;
     transition: all 0.2s ease;
 }
 

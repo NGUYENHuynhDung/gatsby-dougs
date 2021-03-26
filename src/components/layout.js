@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header/>
-      <main style={{marginTop:"100px"}}>{children}</main>
+      <main>{children}</main>
       <Footer/>
     </>
   )

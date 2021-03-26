@@ -1,0 +1,267 @@
+.hero-sections{
+    position: relative;
+    background: #c0e0ed;
+    width: 100%;
+
+    padding: 100px 20px 0 20px;
+}
+
+.hero-content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.hero-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero-left__title{
+    width: 620px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #013a51;
+    margin-bottom: 20px;
+}
+
+.hero-left__note{
+    width: 620px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #013a51;
+    margin-bottom: 40px;
+}
+
+.hero-left__acces{
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-left__acces--button{
+    background: #11abec;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #11abec;
+
+    transition: all 0.3s ease;
+}
+.hero-left__acces--button:hover{
+    background: #fff;
+    color: #11abec;
+}
+
+.hero-left__acces--text{
+    margin-left: 40px;
+    color: #013a51;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-left__acces--text span{
+    font-size: 35px;
+    font-weight: 1000;
+    
+}
+
+.hero-left__acces--text sup{
+    font-size: 17px;
+}
+
+.hero-right{
+    position: relative;
+    margin: 0;
+
+    width: 420px;
+    height: 560px;
+}
+
+.hero-right__image img{
+    width: 420px;
+    height: 560px;
+    margin: 0;
+}
+
+.hero-right__keywords{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.keywords-box{
+    font-weight: bold;
+    font-size: 13px;
+
+    text-align: center;
+    animation: blink 10s infinite;
+}
+
+.keywords-box.box1{
+    position: absolute;
+    top: 57px;
+    right: 40px;
+    width: 130px;
+    background: rgb(235, 59, 176);
+    color: #fff;
+}
+
+.keywords-box.box2{
+    position: absolute;
+    top: 270px;
+    left: 60px;
+    width: 70px;
+    background: #11abec;
+    color: #fff;
+}
+
+.keywords-box.box3{
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    width: 90px;
+    background: #0ed094;
+    color: #fff;
+}
+  
+@keyframes blink{
+    20%,40%,60%,80% {
+        color: #111;
+    }
+    0%,19%,25%,39%,45%,59%,65%,79%,85%,
+    100% {
+        color: #fff;
+    }
+}
+
+.hero-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 65px;
+    width: 150px;
+    background: #fff;
+}
+
+.hero-button__button{
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 65px;
+    width: 150px;
+    background: #fff;
+
+    color: #013a51;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 2;
+
+    transition: all 0.2s ease-out;
+}
+
+.hero-button__button:hover{
+    background: #11abec;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1240px) {
+    .hero-button__button{
+        bottom: -15px;
+        right: 120px;
+        left: auto;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .hero-button__button{
+        bottom: -15px;
+        right: 80px;
+        left: auto;
+    }
+
+    .hero-right{
+        position: relative;
+        margin: 0;
+    
+        width: 330px;
+        height: 420px;
+    }
+    
+    .hero-right__image img{
+        width: 330px;
+        height: 420px;
+        margin: 0;
+    }
+    
+    .hero-left__title{
+        width: 315px;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .hero-left__note{
+        width: 315px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-left__acces{
+        width: 315px;
+        margin: 0 auto;
+    }
+
+    .hero-left__acces--button{
+        padding: 7px 25px;
+    }
+    
+    .hero-left__acces--text{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-button__button{
+        bottom: -15px;
+        right: calc(50% - 85px);
+        left: auto;
+    }
+
+    .hero-right{
+        margin-top: 20px;
+    }
+}
